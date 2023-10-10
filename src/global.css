@@ -1,1 +1,13 @@
-body {}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/font/Montserrat-VariableFont_wght.ttf');
+}
+
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}

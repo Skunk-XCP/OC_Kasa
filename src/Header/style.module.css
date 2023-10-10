@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+.logo {
+    height: 58px;
+}
+
+.link_list {
+    display: flex;
+    gap: 57px;
+    list-style: none;
+
+}
+
+.link_list_element {
+    color: #FF6060;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+.link_list_element:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
