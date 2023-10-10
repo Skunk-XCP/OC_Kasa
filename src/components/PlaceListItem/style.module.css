@@ -1,0 +1,23 @@
+.location_card {
+    position: relative;
+    height: 340px;
+    width: 340px;
+    background-color: rgb(136, 164, 180);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.location_card:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.location_title {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: white;
+}

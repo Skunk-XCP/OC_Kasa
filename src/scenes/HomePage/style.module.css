@@ -1,0 +1,33 @@
+.banner {
+    background-image: url(../../assets/images/Image_source_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 0 5%;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 68px;
+    text-shadow: -0.2px -0.2px 0 #000,
+        0.2px -0.2px 0 #000,
+        -0.2px 0.2px 0 #000,
+        0.2px 0.2px 0 #000;
+}
+
+.container_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin: 3% 5%;
+    padding: 4%;
+}

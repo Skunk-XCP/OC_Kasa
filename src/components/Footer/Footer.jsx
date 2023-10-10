@@ -1,5 +1,5 @@
 import s from "./style.module.css";
-import logo from "../assets/images/logoBlanc.png"
+import logo from "../../assets/images/logoBlanc.png"
 
 export function Footer() {
     return <footer className={s.container}>
