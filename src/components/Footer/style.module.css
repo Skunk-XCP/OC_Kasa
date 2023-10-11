@@ -11,10 +11,22 @@
     padding-top: 50px;
     font-weight: 500;
     font-size: 1.5rem;
-
 }
 
 .copyrightInfo {
     color: #fff;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        padding-top: 0;
+    }
+
+    .copyrightInfo {
+        padding-top: 0px;
+        width: 130px;
+        font-weight: 400;
+        text-align: center;
+    }
 }

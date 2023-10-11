@@ -13,7 +13,6 @@
     display: flex;
     gap: 57px;
     list-style: none;
-
 }
 
 .link_list_element {
@@ -26,4 +25,23 @@
 .link_list_element:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+
+    .container {
+        padding: 3% 5%;
+    }
+
+    .logo {
+        height: 46px;
+    }
+
+    .link_list {
+        gap: 26px;
+    }
+
+    .link_list_element {
+        font-size: 1rem;
+    }
 }

@@ -1,6 +1,7 @@
 import s from "./style.module.css";
 import logo from "../../assets/images/logo.png"
 
+
 export function Header() {
     return <header className={s.container}>
         <img className={s.logo} src={logo} alt="Logo Kasa" />
