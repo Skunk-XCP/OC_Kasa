@@ -2,15 +2,41 @@
     position: relative;
     height: 340px;
     width: 340px;
-    background-color: rgb(136, 164, 180);
-    border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 .location_card:hover {
     cursor: pointer;
     transform: scale(1.01);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gradient_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.card_figure {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
 }
 
 .location_title {
@@ -20,4 +46,6 @@
     font-size: 1.12rem;
     font-weight: 500;
     color: white;
+
+    z-index: 2;
 }

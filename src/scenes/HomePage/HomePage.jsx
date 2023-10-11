@@ -2,8 +2,12 @@ import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import s from "./style.module.css";
 import { PlaceListItem } from "../../components/PlaceListItem/PlaceListItem";
+import data from "../../data/logements.json"
+
+
 
 export function HomePage() {
+    console.log(data);
     return (
         <>
             <Header />
@@ -12,29 +16,10 @@ export function HomePage() {
                     <h1 className={s.title}>Chez vous, partout et ailleurs</h1>
                 </div>
 
-                <div className={s.container_items}>
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                    <PlaceListItem />
-                </div>
+                <section className={s.container_items}>
+                    {data.map(dataLogement =>
+                        <PlaceListItem key={dataLogement.id} id={dataLogement.id} cover={dataLogement.cover} title={dataLogement.title} />)}
+                </section>
             </main>
             <Footer />
         </>

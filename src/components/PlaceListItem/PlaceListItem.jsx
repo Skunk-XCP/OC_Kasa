@@ -1,10 +1,17 @@
 import s from "./style.module.css";
 
-export function PlaceListItem() {
+export function PlaceListItem({ id, title, cover }) {
     return (
-        <a href="/" className={s.location_card}>
-            <img src="" alt="" />
-            <h2 className={s.location_title}>Titre de la location</h2>
+        <a id={id} href="/" >
+            <article className={s.location_card}>
+                <span className={s.gradient_overlay}></span>
+                <figure className={s.card_figure}>
+                    <img className={s.cover} src={cover} alt="" />
+                    <figcaption>
+                        <h2 className={s.location_title}>{title}</h2>
+                    </figcaption>
+                </figure>
+            </article>
         </a>
     )
 }
