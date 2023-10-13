@@ -8,7 +8,6 @@ import banner from "../../assets/images/Image_source_1.png"
 
 
 export function HomePage() {
-    console.log(data);
     return (
         <>
             <Header />

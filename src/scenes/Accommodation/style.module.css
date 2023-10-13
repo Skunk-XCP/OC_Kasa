@@ -1,0 +1,85 @@
+.slideshow {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+/* MAIN CONTAINER */
+.content_container {
+    display: flex;
+    justify-content: space-between;
+    height: 15rem;
+    margin: 0 5%;
+}
+
+/* PLACE INFORMATIONS */
+.acommodation_and_tags {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+/* TITLE */
+.accommodation_title {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 2.25rem;
+
+}
+
+/* PLACE */
+.accommodation_location {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 1.13rem;
+}
+
+/* _____________________________________ */
+
+/* OWNER INFORMATIONS */
+.owner_and_rating {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 20rem;
+}
+
+/* OWNER */
+.owner {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 10.44rem;
+    height: 4rem;
+}
+
+/* POFIL PICTURE */
+.owner_picture {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+/* NAME */
+.owner_name {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 1.13rem;
+
+}
+
+/* RATING */
+.rating {
+    height: 30px;
+    width: 100%;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+}
+
+.description {}
+
+.equipements {}

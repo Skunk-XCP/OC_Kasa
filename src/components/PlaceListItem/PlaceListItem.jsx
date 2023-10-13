@@ -1,8 +1,10 @@
 import s from "./style.module.css";
+import { Link } from 'react-router-dom';
+
 
 export function PlaceListItem({ id, title, cover }) {
     return (
-        <a id={id} href="/" >
+        <Link to={`/logement/${id}`}>
             <article className={s.location_card}>
                 <span className={s.gradient_overlay}></span>
                 <figure className={s.card_figure}>
@@ -12,6 +14,6 @@ export function PlaceListItem({ id, title, cover }) {
                     </figcaption>
                 </figure>
             </article>
-        </a>
+        </Link>
     )
 }

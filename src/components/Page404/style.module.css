@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -150px;
+    margin-bottom: 150px;
+
+}
+
+.error_404 {
+    color: #FF6060;
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.error_message {
+    color: #FF6060;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: -150px;
+
+}
+
+.error_link {
+    color: #FF6060;
+    font-size: 1.13rem;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: -30px;
+        margin-bottom: 80px;
+
+    }
+
+    .error_404 {
+        font-size: 6rem;
+    }
+
+    .error_message {
+        font-size: 2.25rem;
+        margin-top: -30px;
+
+    }
+
+    .error_link {
+        font-size: 1.13rem;
+        margin-top: 40px;
+    }
+}
