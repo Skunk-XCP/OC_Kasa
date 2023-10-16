@@ -1,0 +1,58 @@
+.buttons_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.toggle_container {
+    width: 40%;
+}
+
+.toggle_button {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.13rem;
+    padding: 0 15px;
+}
+
+.rotate {
+    transform: rotate(0deg);
+}
+
+.initial {
+    transform: rotate(180deg);
+}
+
+.chevronIcon {
+    font-size: 1.8rem;
+}
+
+.content {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    border-radius: 0 0 5px 5px;
+}
+
+.content ul,
+.content li {
+    margin: 0;
+    padding: 0 0 5px 0;
+    list-style-type: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

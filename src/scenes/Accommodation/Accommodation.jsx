@@ -6,6 +6,8 @@ import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import { Page404 } from "../../components/Page404/Page404";
 import { Rating } from "../../components/Rating/Rating";
+import { InfoToggle } from "../../components/InfoToggle/InfoToggle";
+import { Tags } from "../../components/Tags/Tags";
 
 export function Accommodation() {
     const { id } = useParams();
@@ -30,8 +32,8 @@ export function Accommodation() {
                     <div className={s.acommodation_and_tags}>
                         <h2 className={s.accommodation_title}>{accommodation.title}</h2>
                         <p className={s.accommodation_location}>{accommodation.location}</p>
-                        <div className={s.tags}> tags
-                            {/*  tags ici */}
+                        <div className={s.tags}>
+                            <Tags tags={accommodation.tags} />
                         </div>
                     </div>
 
@@ -44,14 +46,13 @@ export function Accommodation() {
 
                         <div className={s.rating}>
                             <Rating value={parseInt(logement.rating, 10)} />
-
                         </div>
                     </div>
                 </div>
 
                 <div className={s.buttons}>
-                    <button className={s.description}>Description</button>
-                    <button className={s.equipements}>Équipements</button>
+                    <InfoToggle description={accommodation.description} equipments={accommodation.equipments} />
+
                 </div>
             </div>
             <Footer />
