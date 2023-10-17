@@ -6,14 +6,16 @@ import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import { Page404 } from "../../components/Page404/Page404";
 import { Rating } from "../../components/Rating/Rating";
-import { InfoToggle } from "../../components/InfoToggle/InfoToggle";
+import { InfoButton } from "../../components/InfoButton/InfoButton";
 import { Tags } from "../../components/Tags/Tags";
+import { useState } from "react";
 
 export function Accommodation() {
     const { id } = useParams();
     const navigate = useNavigate();
     const logement = data.find(l => l.id === id);
     const accommodation = data.find((accommodation) => accommodation.id === id);
+    const [showInfo, setShowInfo] = useState(null);
     if (!accommodation) {
         navigate("404");
         return <Page404 />;
@@ -51,8 +53,19 @@ export function Accommodation() {
                 </div>
 
                 <div className={s.buttons}>
-                    <InfoToggle description={accommodation.description} equipments={accommodation.equipments} />
-
+                    {[
+                        { title: 'Description', content: accommodation.description },
+                        { title: 'Équipements', content: accommodation.equipments }
+                    ].map((item, index) => (
+                        <InfoButton
+                            key={index}
+                            title={item.title}
+                            content={item.content}
+                            showInfo={showInfo}
+                            setShowInfo={setShowInfo}
+                            isLarge={false}
+                        />
+                    ))}
                 </div>
             </div>
             <Footer />

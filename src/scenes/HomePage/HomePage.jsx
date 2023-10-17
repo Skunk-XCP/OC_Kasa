@@ -14,7 +14,7 @@ export function HomePage() {
             <main>
                 <div className={s.banner}>
                     <span className={s.banner_opacity}></span>
-                    <img className={s.main_banner} src={banner} alt="" />
+                    <img className={s.main_banner} src={banner} alt={banner.title} />
                     <h1 className={s.title}>Chez vous, partout et ailleurs</h1>
                 </div>
 

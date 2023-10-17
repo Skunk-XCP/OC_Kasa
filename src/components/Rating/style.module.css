@@ -9,3 +9,14 @@
     font-size: 1.5rem;
     padding-right: 10px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .fullStar {
+        font-size: 1.1rem;
+    }
+
+    .emptyStar {
+        font-size: 1.1rem;
+    }
+}

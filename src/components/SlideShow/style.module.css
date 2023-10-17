@@ -1,7 +1,7 @@
 .container {
     position: relative;
-    height: 25.94rem;
-    width: 79rem;
+    height: 41vh;
+    width: 100vw;
     overflow: hidden;
     border-radius: 25px;
 }
@@ -19,7 +19,7 @@
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px;
+    padding: 1vw;
     cursor: pointer;
     font-size: 3.75rem;
     height: 100%;
@@ -35,4 +35,15 @@
 .next {
     right: 0px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 15.94rem;
+    }
+
+    .previous,
+    .next {
+        font-size: 1.75rem;
+    }
 }

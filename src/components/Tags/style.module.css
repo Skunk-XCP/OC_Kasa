@@ -11,3 +11,14 @@
     border-radius: 10px;
     font-size: 0.9em;
 }
+
+@media screen and (max-width: 768px) {
+    .tags-container {}
+
+    .tag {
+        margin: 0;
+        margin-right: 10px;
+
+
+    }
+}

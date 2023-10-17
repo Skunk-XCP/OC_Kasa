@@ -1,7 +1,7 @@
 .slideshow {
     display: flex;
     justify-content: center;
-    margin-top: 3%;
+    margin: 3% 5% 0 5%;
 }
 
 /* MAIN CONTAINER */
@@ -33,7 +33,6 @@
     color: #FF6060;
     font-weight: 500;
     font-size: 1.13rem;
-    /* margin: 0; */
 }
 
 .tags {
@@ -71,16 +70,61 @@
     color: #FF6060;
     font-weight: 500;
     font-size: 1.13rem;
-
 }
 
 /* RATING */
 .rating {
     height: 30px;
-    width: 100%;
+    width: auto;
 }
 
 .buttons {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     margin-bottom: 3%;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .content_container {
+        flex-direction: column;
+        justify-content: start;
+        gap: 25px;
+    }
+
+    .accommodation_title {
+        font-size: 1.13rem;
+    }
+
+    .accommodation_location {
+        font-size: 0.85rem;
+    }
+
+    .owner_and_rating {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .owner {
+        align-items: center;
+        margin-left: auto;
+        text-align: end;
+    }
+
+    .owner_picture {
+        height: 3rem;
+        width: 3rem;
+        margin-left: 15px;
+
+    }
+
+    .buttons {
+        flex-direction: column;
+        margin: 0 5%;
+        gap: 20px;
+    }
 }
