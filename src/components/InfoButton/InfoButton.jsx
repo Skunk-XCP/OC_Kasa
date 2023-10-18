@@ -1,7 +1,10 @@
 import s from "./style.module.css";
+import { useState } from 'react';
 
 // InfoButton.js
-export function InfoButton({ title, content, showInfo, setShowInfo, isLarge }) {
+export function InfoButton({ title, content, isLarge }) {
+    const [showInfo, setShowInfo] = useState(null);
+
     return (
         <div className={`${s.toggle_container} ${isLarge ? s.large : ''}`}>
 

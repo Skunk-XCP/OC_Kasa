@@ -46,8 +46,6 @@ export function AboutPage() {
                         key={index}
                         title={data.title}
                         content={data.content}
-                        showInfo={showInfo}
-                        setShowInfo={setShowInfo}
                         isLarge={true}
                     />
                 ))}

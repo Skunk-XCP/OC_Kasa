@@ -4,7 +4,6 @@
     margin: 3% 5% 0 5%;
 }
 
-/* MAIN CONTAINER */
 .content_container {
     display: flex;
     justify-content: space-between;
@@ -12,23 +11,19 @@
     margin: 0 5%;
 }
 
-/* PLACE INFORMATIONS */
 .acommodation_and_tags {
     display: flex;
     flex-direction: column;
     width: 30rem;
 }
 
-/* TITLE */
 .accommodation_title {
     color: #FF6060;
     font-weight: 500;
     font-size: 2.25rem;
     margin-bottom: 0;
-
 }
 
-/* PLACE */
 .accommodation_location {
     color: #FF6060;
     font-weight: 500;
@@ -39,43 +34,12 @@
     margin: 2% 0;
 }
 
-/* _____________________________________ */
-
-/* OWNER INFORMATIONS */
-.owner_and_rating {
+.host_and_rating {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     width: 20rem;
     align-items: flex-end;
-}
-
-/* OWNER */
-.owner {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 10.44rem;
-    height: 4rem;
-}
-
-/* POFIL PICTURE */
-.owner_picture {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-}
-
-/* NAME */
-.owner_name {
-    color: #FF6060;
-    font-weight: 500;
-    font-size: 1.13rem;
-}
-
-/* RATING */
-.rating {
-    height: 30px;
-    width: auto;
 }
 
 .buttons {
@@ -86,7 +50,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
 
     .content_container {
         flex-direction: column;
@@ -102,29 +65,18 @@
         font-size: 0.85rem;
     }
 
-    .owner_and_rating {
+    .host_and_rating {
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 100%;
         align-items: center;
     }
 
-    .owner {
-        align-items: center;
-        margin-left: auto;
-        text-align: end;
-    }
-
-    .owner_picture {
-        height: 3rem;
-        width: 3rem;
-        margin-left: 15px;
-
-    }
-
     .buttons {
         flex-direction: column;
         margin: 0 5%;
         gap: 20px;
+        padding-bottom: 5%;
+
     }
 }

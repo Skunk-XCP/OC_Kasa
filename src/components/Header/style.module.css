@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1% 5%;
+    z-index: 99;
 }
 
 .logo {
@@ -24,7 +25,6 @@
 
 .link_list_element:hover {
     text-decoration: underline;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

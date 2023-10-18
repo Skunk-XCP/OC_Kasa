@@ -1,0 +1,32 @@
+.host_profile {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 10.44rem;
+    height: 4rem;
+}
+
+.host_picture {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.host_name {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 1.13rem;
+}
+
+@media screen and (max-width: 768px) {
+    .host_profile {
+        align-items: center;
+        margin-left: auto;
+        text-align: end;
+    }
+
+    .host_picture {
+        height: 3rem;
+        width: 3rem;
+        margin-left: 15px;
+    }
+}
