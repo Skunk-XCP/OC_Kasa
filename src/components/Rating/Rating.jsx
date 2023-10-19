@@ -1,6 +1,5 @@
 import s from "./style.module.css";
 
-
 export function Rating({ value }) {
     // Création dun tableau pour représenter les 5 étoiles possibles
     const stars = Array.from({ length: 5 }, (_, index) => {

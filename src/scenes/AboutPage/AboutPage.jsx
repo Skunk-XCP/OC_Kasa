@@ -3,10 +3,8 @@ import { Header } from "../../components/Header/Header";
 import banner from "../../assets/images/Image_source_2.png"
 import s from "./style.module.css";
 import { InfoButton } from "../../components/InfoButton/InfoButton";
-import { useState } from "react";
 
 export function AboutPage() {
-    const [showInfo, setShowInfo] = useState(null);
     let aboutData = [
         {
             id: 1,

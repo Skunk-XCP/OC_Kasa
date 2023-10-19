@@ -17,14 +17,18 @@ export function Accommodation() {
     const accommodation = data.find((accommodation) => accommodation.id === id);
 
     useEffect(() => {
+        // on redirige l'utilisateur vers la page 404 si 
+        // on ne trouve pas le logement correspondant à l'ID
         if (!logement) {
             navigate("/404");
         }
-    }, [id]);
+    }, [id, logement, navigate]);
 
     return (
         <>
             <Header />
+
+            {/* On vérifie si 'logement' existe. Si oui, on affiche tout le contenu ci-dessous */}
             {logement &&
                 <div className={s.container}>
                     <div className={s.slideshow}>
@@ -39,7 +43,6 @@ export function Accommodation() {
                                 <Tags tags={accommodation.tags} />
                             </div>
                         </div>
-
 
                         <div className={s.host_and_rating}>
                             <div className={s.host}>

@@ -4,7 +4,6 @@ import { Page404 } from "./components/Page404/Page404";
 import { Accommodation } from "./scenes/Accommodation/Accommodation";
 import { AboutPage } from "./scenes/AboutPage/AboutPage";
 
-
 export function App() {
     return (
         <>

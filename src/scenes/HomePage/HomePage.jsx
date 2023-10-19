@@ -5,8 +5,6 @@ import { PlaceListItem } from "../../components/PlaceListItem/PlaceListItem";
 import data from "../../data/logements.json"
 import banner from "../../assets/images/Image_source_1.png"
 
-
-
 export function HomePage() {
     return (
         <>

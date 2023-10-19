@@ -5,6 +5,7 @@
     align-items: center;
     background-color: black;
     height: 209px;
+    margin: 0 5%;
 }
 
 .logo {
@@ -19,6 +20,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+
     .logo {
         padding-top: 0;
     }

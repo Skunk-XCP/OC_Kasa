@@ -25,8 +25,17 @@
 
 
 @media screen and (max-width: 768px) {
+
+    .banner {
+        height: 170px;
+    }
+
     .buttons_container {
         height: auto;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
+    }
+
+    .about_banner {
+        height: 14vh;
     }
 }
