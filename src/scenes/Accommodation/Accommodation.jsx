@@ -11,28 +11,33 @@ import { useEffect } from "react";
 import { HostInfo } from "../../components/HostInfo/HostInfo";
 
 export function Accommodation() {
+    // On récupère la valeur de l'ID grace à useParams()
     const { id } = useParams();
+
+    // Utilisation du hook useNavigate pour permettre 
+    // des redirections programmées dans l'application
     const navigate = useNavigate();
-    const logement = data.find(l => l.id === id);
+
+    // Parcours l'objet 'accommodation' dans data, compare l'id avec l'id récupéré de l'url
     const accommodation = data.find((accommodation) => accommodation.id === id);
 
     useEffect(() => {
         // on redirige l'utilisateur vers la page 404 si 
-        // on ne trouve pas le logement correspondant à l'ID
-        if (!logement) {
+        // on ne trouve pas le accommodation correspondant à l'ID
+        if (!accommodation) {
             navigate("/404");
         }
-    }, [id, logement, navigate]);
+    }, [id, accommodation, navigate]);
 
     return (
         <>
             <Header />
 
-            {/* On vérifie si 'logement' existe. Si oui, on affiche tout le contenu ci-dessous */}
-            {logement &&
+            {/* On vérifie si 'accommodation' existe. Si oui, on affiche tout le contenu ci-dessous */}
+            {accommodation &&
                 <div className={s.container}>
                     <div className={s.slideshow}>
-                        <SlideShow pictures={logement.pictures} />
+                        <SlideShow pictures={accommodation.pictures} />
                     </div>
 
                     <div className={s.content_container}>
@@ -49,7 +54,7 @@ export function Accommodation() {
                                 <HostInfo name={accommodation.host.name} picture={accommodation.host.picture} />
                             </div>
 
-                            <Rating value={parseInt(logement.rating, 10)} />
+                            <Rating value={parseInt(accommodation.rating, 10)} />
                         </div>
                     </div>
 
@@ -59,7 +64,7 @@ export function Accommodation() {
                             { title: 'Équipements', content: accommodation.equipments }
                         ].map((item, index) => (
                             <InfoButton
-                                key={index}
+                                key={accommodation.id}
                                 title={item.title}
                                 content={item.content}
                                 isLarge={false}

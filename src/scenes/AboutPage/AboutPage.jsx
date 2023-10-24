@@ -39,9 +39,9 @@ export function AboutPage() {
                 <img className={s.about_banner} src={banner} alt={banner.title} />
             </div>
             <div className={s.buttons_container}>
-                {aboutData.map((data, index) => (
+                {aboutData.map((data) => (
                     <InfoButton
-                        key={index}
+                        key={data.id}
                         title={data.title}
                         content={data.content}
                         isLarge={true}
