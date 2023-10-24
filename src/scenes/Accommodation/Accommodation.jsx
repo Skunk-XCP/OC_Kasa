@@ -14,12 +14,12 @@ export function Accommodation() {
     // On récupère la valeur de l'ID grace à useParams()
     const { id } = useParams();
 
+    // Parcours l'objet 'accommodation' dans data, compare l'id avec l'id récupéré de l'url
+    const accommodation = data.find((accommodation) => accommodation.id === id);
+
     // Utilisation du hook useNavigate pour permettre 
     // des redirections programmées dans l'application
     const navigate = useNavigate();
-
-    // Parcours l'objet 'accommodation' dans data, compare l'id avec l'id récupéré de l'url
-    const accommodation = data.find((accommodation) => accommodation.id === id);
 
     useEffect(() => {
         // on redirige l'utilisateur vers la page 404 si 
@@ -62,7 +62,7 @@ export function Accommodation() {
                         {[
                             { title: 'Description', content: accommodation.description },
                             { title: 'Équipements', content: accommodation.equipments }
-                        ].map((item, index) => (
+                        ].map((item) => (
                             <InfoButton
                                 key={accommodation.id}
                                 title={item.title}
