@@ -19,7 +19,7 @@
 .acommodation_and_tags {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 100%;
 }
 
 .accommodation_title {
@@ -79,9 +79,8 @@
 
     .buttons {
         flex-direction: column;
-        margin: 0 5%;
+        align-items: center;
         gap: 20px;
         padding-bottom: 5%;
-
     }
 }

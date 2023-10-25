@@ -19,6 +19,7 @@
     border-radius: 5px;
     font-size: 1.13rem;
     padding: 0 15px;
+    cursor: pointer;
 }
 
 .rotate {
