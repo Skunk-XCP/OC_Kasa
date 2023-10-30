@@ -27,6 +27,9 @@ export function Accommodation() {
         if (!accommodation) {
             navigate("/404");
         }
+        // useEffect est déclenché à nouveau si l'une des dépendances dans le tableau change
+        // Ceci permet d'assurer que l'utilisateur est redirigé vers la page 404 si le logement spécifié n'est pas trouvé
+
     }, [id, accommodation, navigate]);
 
     return (

@@ -11,7 +11,7 @@ export function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/logement/:id" element={<Accommodation />} />
                 <Route path="/about" element={<AboutPage />} />
-                <Route path="/404" element={<Page404 />} />
+                <Route path="*" element={<Page404 />} />
             </Routes>
         </>
     )
